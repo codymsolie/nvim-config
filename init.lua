@@ -6,6 +6,14 @@
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- filetypes (custom)
+-- using this to force python syntax on sagemath files
+vim.filetype.add {
+  pattern = {
+    ['.*/*.sage'] = 'python',
+  },
+}
+
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 

@@ -20,6 +20,12 @@ return {
       -- file explorer (panes)
       require('mini.files').setup()
 
+      -- auto pair completion
+      require('mini.pairs').setup()
+
+      -- move selections with alt+{h,j,k,l}
+      require('mini.move').setup()
+
       -- Bottom bar statusline.
       local statusline = require 'mini.statusline'
       statusline.setup { use_icons = vim.g.have_nerd_font }
